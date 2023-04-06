@@ -17,7 +17,9 @@ int myTexture(char * filename)
     return id;
 }
 
-#include "glm.h" ///step02-1 把 source.zip裡的 glm.h 放在同目錄中
+#include "glm.h" 
+
+///step02-1 把 source.zip裡的 glm.h 放在同目錄中
 ///step03-1也要把step02-1的 glm.h也準備好
 ///glm.cpp 也要加到你的程式目錄裡
 
