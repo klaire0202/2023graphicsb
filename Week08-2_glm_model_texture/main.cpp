@@ -1,4 +1,4 @@
-#include <opencv/highgui.h> ///使用 OpenCV 2.1 比較簡單, 只要用 High GUI 即可
+#include <opencv/highgui.h> ///使用 OpenCV 2.1 比較簡單, 只需要用 High GUI 即可
 #include <opencv/cv.h>
 #include <GL/glut.h>
 int myTexture(char * filename)
