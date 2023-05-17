@@ -5,11 +5,11 @@
 *.slo
 *.lo
 *.o
-*.obj
+#*.obj 註解掉
 
 # Precompiled Headers
 *.gch
-*.pch
+*.pchS
 
 # Compiled Dynamic libraries
 *.so
