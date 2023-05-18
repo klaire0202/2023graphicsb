@@ -8,18 +8,18 @@ GLMmodel * body = NULL;///week13_step02-2
 GLMmodel * uparmR = NULL;
 GLMmodel * lowarmR = NULL;
 
-int show[4] = {1,0,0,0};///week13_step03-1
-
+int show[4] = {1,1,1,1};///week14_step03-1///week13_step03-1
+int ID = 2;///week14_step03-1 設定關節 ID
 float teapotX=0,teapotY=0;
 FILE * fout = NULL; ///step02-1
 FILE * fin = NULL; ///step02-1
 
 void keyboard(unsigned char key,int x,int y)
 {
-    if(key=='0') show[0] = ! show[0];
-    if(key=='1') show[1] = ! show[1];
-    if(key=='2') show[2] = ! show[2];
-    if(key=='3') show[3] = ! show[3];
+    if(key=='0') ID = 0;///week14_step03-1 ///show[0] = ! show[0];
+    if(key=='1') ID = 1;///week14_step03-1 ///show[1] = ! show[1];
+    if(key=='2') ID = 2;///week14_step03-1 ///show[2] = ! show[2];
+    if(key=='3') ID = 3;///week14_step03-1 ///show[3] = ! show[3];
     glutPostRedisplay();
 }
 void display()
@@ -37,10 +37,22 @@ void display()
         glScalef(0.3,0.3,0.3);///week13_step02-3
         glPushMatrix();///week13_step03-2
             glTranslatef(teapotX,teapotY,0);///week13_step03-2
+
+            if(ID==0) glColor3f(1,0,0); ///week14_step03-1 選定的,設紅色
+            else glColor3f(1,1,1); ///week14_step03-1 沒選定,設白色
             if(show[0]) glmDraw(head,GLM_MATERIAL);///week13_step02-3
         glPopMatrix();///week13_step03-2
+
+        if(ID==1) glColor3f(1,0,0); ///week14_step03-1 選定的,設紅色
+        else glColor3f(1,1,1); ///week14_step03-1 沒選定,設白色
         if(show[1]) glmDraw(body,GLM_MATERIAL);///week13_step02-2
+
+        if(ID==2) glColor3f(1,0,0); ///week14_step03-1 選定的,設紅色
+        else glColor3f(1,1,1); ///week14_step03-1 沒選定,設白色
         if(show[2]) glmDraw(uparmR,GLM_MATERIAL);///week13_step02-3
+
+        if(ID==3) glColor3f(1,0,0); ///week14_step03-1 選定的,設紅色
+        else glColor3f(1,1,1); ///week14_step03-1 沒選定,設白色
         if(show[3]) glmDraw(lowarmR,GLM_MATERIAL);///week13_step02-3
     glPopMatrix();
     glutSwapBuffers();
