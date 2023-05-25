@@ -9,7 +9,8 @@ GLMmodel * lowarmR = NULL;
 int show[4] = {1,1,1,1};///week14_step03-1 都秀出來
 int ID = 3;///week14_step03-1 設定關節 ID 0:頭 1:身體 2:上手臂 3:下手臂
 float teapotX=0,teapotY=0;
-float angle=0, angle2=0, angle3=0;///week14_step03-2
+float angle[20]={};///Week15-3_step03-1
+///float angle=0, angle2=0, angle3=0;///week14_step03-2
 FILE * fout = NULL;
 FILE * fin = NULL;
 
@@ -49,7 +50,7 @@ void display()
         glPushMatrix(); ///week14_step03_2
             ///glTranslatef(teapotX, teapotY, 0); ///week14_step03_2 要設定 TRT
             glTranslatef(-1.360000, +0.360000, 0); ///week14_step03_2
-            glRotatef(angle, 0, 0, 1); ///week14_step03_2
+            glRotatef(angle[2], 0, 0, 1); ///week14_step03_2
             glTranslatef(1.360000, -0.360000, 0); ///week14_step03_2
 
             if(ID==2) glColor3f(1,0,0); ///week14_step03-1 紅色
@@ -59,7 +60,7 @@ void display()
             glPushMatrix();  ///week14_step03_2
                 ///glTranslatef(teapotX, teapotY, 0); ///week14_step03_2 要設定 TRT
                 glTranslatef(-1.959999, +0.080000, 0);
-                glRotatef(angle, 0, 0, 1);
+                glRotatef(angle[3], 0, 0, 1);
                 glTranslatef(1.959999, -0.080000, 0);
 
                 if(ID==3) glColor3f(1,0,0); ///week14_step03-1 紅色
@@ -90,7 +91,7 @@ void motion(int x,int y)
     teapotX += (x - oldX)/150.0*3;
     teapotY -= (y - oldY)/150.0*3;
     printf("glTranslatef(%f, %f, 0);\n", teapotX, teapotY); ///week14_step03_2
-    angle += x-oldX; ///week14_step03_2
+    angle[ID] += x-oldX; ///week15_step3-1
     oldX = x;
     oldY = y;
     glutPostRedisplay();
