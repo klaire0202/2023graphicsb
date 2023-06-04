@@ -1,0 +1,111 @@
+# depslib dependency file v1.0
+1685869672 source:c:\users\klaire_0202\desktop\10160056_final_homework\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<stdio.h>
+	<GL/glut.h>
+	"glm.h"
+
+1426320928 c:\users\klaire_0202\desktop\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 c:\users\klaire_0202\desktop\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1685722997 c:\users\klaire_0202\desktop\10160056_final_homework\glm.h
+	<GL/glut.h>
+
+1685722997 source:c:\users\klaire_0202\desktop\10160056_final_homework\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1426320928 c:\users\klaire_0202\desktop\10160056_final_homework\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 c:\users\klaire_0202\desktop\10160056_final_homework\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1685722997 source:c:\users\klaire_0202\downloads\10160056_final_homework\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1685722997 c:\users\klaire_0202\downloads\10160056_final_homework\glm.h
+	<GL/glut.h>
+
+1426320928 c:\users\klaire_0202\downloads\10160056_final_homework\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 c:\users\klaire_0202\downloads\10160056_final_homework\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1685870859 source:c:\users\klaire_0202\downloads\10160056_final_homework\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<stdio.h>
+	<GL/glut.h>
+	"glm.h"
+
+1685722997 source:d:\大學\10160056_final_homework\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1685722997 d:\大學\10160056_final_homework\glm.h
+	<GL/glut.h>
+
+1426320928 d:\大學\10160056_final_homework\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 d:\大學\10160056_final_homework\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1685870859 source:d:\大學\10160056_final_homework\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<stdio.h>
+	<GL/glut.h>
+	"glm.h"
+
