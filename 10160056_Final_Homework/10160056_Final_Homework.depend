@@ -109,3 +109,41 @@
 	<GL/glut.h>
 	"glm.h"
 
+1685722997 source:d:\大學\電腦圖學\10160056_final_homework\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1685722997 d:\大學\電腦圖學\10160056_final_homework\glm.h
+	<GL/glut.h>
+
+1426320928 d:\大學\電腦圖學\10160056_final_homework\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426320928 d:\大學\電腦圖學\10160056_final_homework\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1685947562 source:d:\大學\電腦圖學\10160056_final_homework\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<stdio.h>
+	<GL/glut.h>
+	"glm.h"
+	"CMP3_MCI.h"
+
+1685939033 d:\大學\電腦圖學\10160056_final_homework\cmp3_mci.h
+	<string>
+	<windows.h>
+	<mmsystem.h>
+

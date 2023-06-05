@@ -129,17 +129,17 @@ void display()
 
             glPushMatrix();///¥k¤â
                 glColor3f(0.8,0.4,0.6);
-                glTranslatef(-1.53,  18.07, 0 );
+                glTranslatef(-1.73,  18.13, 0 );
                 glRotatef(angle[1], 0, 1, 0);
                 glRotatef(angle2[1], 1, 0, 0);
-                glTranslatef( 1.53, -18.07, 0 );
+                glTranslatef( 1.73, -18.13, 0 );
                 glmDraw(arm1, GLM_MATERIAL|GLM_TEXTURE);
                 glPushMatrix();
                     glColor3f(1,0.8,0.9);
-                    glTranslatef(-2.27, 16.67, 0 );
+                    glTranslatef(-2.40, 16.60, 0 );
                     glRotatef(angle[2], 0, 1, 0);
                     glRotatef(angle2[2], 1, 0, 0);
-                    glTranslatef( 2.27, -16.67, 0 );
+                    glTranslatef( 2.40, -16.60, 0 );
                     glmDraw(hand1, GLM_MATERIAL|GLM_TEXTURE);
                     glPushMatrix();
                         glColor3f(0.5,0.3,0.6);
@@ -154,17 +154,17 @@ void display()
 
             glPushMatrix();///¥ª¤â
                 glColor3f(0.8,0.4,0.6);
-                glTranslatef(-1.53,  18.07, 0 );
+                glTranslatef( 2.00, 18.07, 0 );
                 glRotatef(angle[3], 0, 1, 0);
                 glRotatef(angle2[3], 1, 0, 0);
-                glTranslatef( 1.53, -18.07, 0 );
+                glTranslatef( -2.00, -18.07, 0 );
                 glmDraw(arm2, GLM_MATERIAL|GLM_TEXTURE);
                 glPushMatrix();
                     glColor3f(1,0.8,0.9);
-                    glTranslatef( 2.33, 16.60, 0 );
+                    glTranslatef( 2.33, 16.67, 0 );
                     glRotatef(angle[4], 0, 1, 0);
                     glRotatef(angle2[4], 1, 0, 0);
-                    glTranslatef( -2.33, -16.60, 0 );
+                    glTranslatef( -2.33, -16.67, 0 );
                     glmDraw(hand2, GLM_MATERIAL|GLM_TEXTURE);
                     glPushMatrix();
                         glColor3f(0.5,0.3,0.6);
@@ -275,9 +275,13 @@ void display()
     glPopMatrix();
     glutSwapBuffers();
 }
-
+#include "CMP3_MCI.h"
+CMP3_MCI myMP3;
 int main(int argc, char** argv)
 {
+    myMP3.Load("a.mp3");
+    myMP3.Play();
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE|GLUT_DEPTH);
     glutInitWindowSize(500,500);
